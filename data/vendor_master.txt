@@ -1,0 +1,38 @@
+vendor_id,vendor_name,vendor_type,payment_terms,currency,country,created_date,is_active
+V10000,"טכנולוגיה מתקדמת בע״מ",Local,Net 30,ILS,Israel,2022-01-01,Y
+V10001,"ציוד משרדי דלתא בע״מ",International,Net 60,USD,USA,2022-01-01,Y
+V10002,"חברת אלקטרוניקה אלפא בע״מ",Government,Net 90,EUR,Germany,2022-01-01,Y
+V10003,"מערכות מחשוב בטא לימיטד",Local,COD,ILS,China,2022-01-01,Y
+V10004,"פתרונות תוכנה גמא בע״מ",International,Net 30,USD,Israel,2022-01-01,Y
+V10005,"יבוא ציוד רפואי בע״מ",International,Net 60,EUR,USA,2022-01-01,Y
+V10006,"תעשיות מתכת פרו בע״מ",Government,Net 90,ILS,Germany,2022-01-01,Y
+V10007,"סחר בינלאומי טק בע״מ",Local,COD,USD,China,2022-01-01,Y
+V10008,"חברת אוטומציה חכמה בע״מ",International,Net 30,EUR,Israel,2022-01-01,Y
+V10009,"מוצרי תאורה מודרן בע״מ",International,Net 60,ILS,USA,2022-01-01,N
+V10010,"טכנולוגיה מתקדמת בע״מ 1",Government,Net 90,USD,Germany,2022-01-01,Y
+V10011,"ציוד משרדי דלתא בע״מ 1",Local,COD,EUR,China,2022-01-01,Y
+V10012,"חברת אלקטרוניקה אלפא בע״מ 1",International,Net 30,ILS,Israel,2022-01-01,Y
+V10013,"מערכות מחשוב בטא לימיטד 1",International,Net 60,USD,USA,2022-01-01,Y
+V10014,"פתרונות תוכנה גמא בע״מ 1",Government,Net 90,EUR,Germany,2022-01-01,Y
+V10015,"יבוא ציוד רפואי בע״מ 1",Local,COD,ILS,China,2022-01-01,Y
+V10016,"תעשיות מתכת פרו בע״מ 1",International,Net 30,USD,Israel,2022-01-01,Y
+V10017,"סחר בינלאומי טק בע״מ 1",International,Net 60,EUR,USA,2022-01-01,Y
+V10018,"חברת אוטומציה חכמה בע״מ 1",Government,Net 90,ILS,Germany,2022-01-01,Y
+V10019,"מוצרי תאורה מודרן בע״מ 1",Local,COD,USD,China,2022-01-01,N
+V10020,"טכנולוגיה מתקדמת בע״מ 2",International,Net 30,EUR,Israel,2022-01-01,Y
+V10021,"ציוד משרדי דלתא בע״מ 2",International,Net 60,ILS,USA,2022-01-01,Y
+V10022,"חברת אלקטרוניקה אלפא בע״מ 2",Government,Net 90,USD,Germany,2022-01-01,Y
+V10023,"מערכות מחשוב בטא לימיטד 2",Local,COD,EUR,China,2022-01-01,Y
+V10024,"פתרונות תוכנה גמא בע״מ 2",International,Net 30,ILS,Israel,2022-01-01,Y
+V10025,"יבוא ציוד רפואי בע״מ 2",International,Net 60,USD,USA,2022-01-01,Y
+V10026,"תעשיות מתכת פרו בע״מ 2",Government,Net 90,EUR,Germany,2022-01-01,Y
+V10027,"סחר בינלאומי טק בע״מ 2",Local,COD,ILS,China,2022-01-01,Y
+V10028,"חברת אוטומציה חכמה בע״מ 2",International,Net 30,USD,Israel,2022-01-01,Y
+V10029,"מוצרי תאורה מודרן בע״מ 2",International,Net 60,EUR,USA,2022-01-01,N
+V10030,"טכנולוגיה מתקדמת בע״מ 3",Government,Net 90,ILS,Germany,2022-01-01,Y
+V10031,"ציוד משרדי דלתא בע״מ 3",Local,COD,USD,China,2022-01-01,Y
+V10032,"חברת אלקטרוניקה אלפא בע״מ 3",International,Net 30,EUR,Israel,2022-01-01,Y
+V10033,"מערכות מחשוב בטא לימיטד 3",International,Net 60,ILS,USA,2022-01-01,Y
+V10034,"פתרונות תוכנה גמא בע״מ 3",Government,Net 90,USD,Germany,2022-01-01,Y
+V10035,"יבוא ציוד רפואי בע״מ 3",Local,COD,EUR,China,2022-01-01,Y
+V10036,"תעשיות מתכת פרו בע״מ 3",International,Net 30,ILS,

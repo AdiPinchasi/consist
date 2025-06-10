@@ -1,0 +1,46 @@
+approval_id,invoice_number,approver,approval_date,approval_status,approval_level,comments,processing_time_hours
+APP001,INV500001,אבי כהן,2023-02-22,Approved,Level1,התאמה מלאה למחירי ההזמנה,48
+APP002,INV500002,אבי כהן,2023-02-22,Approved,Level1,כמות וחשבון תואמים,48
+APP003,INV500003,רחל לוי,2023-02-27,Approved,Level1,אישור רגיל,24
+APP004,INV500004,יוסי שמואל,2023-03-10,Approved,Level2,סכום גבוה - אישור נוסף נדרש,72
+APP005,INV500005,יוסי שמואל,2023-03-10,Approved,Level1,חלק מחשבונית משותפת,72
+APP006,INV500006,דנה גרין,2023-03-07,Approved,Level1,התאמה טובה,36
+APP007,INV500007,אבי כהן,2023-03-12,Approved,Level1,תשלום מיידי,24
+APP008,INV500008,רחל לוי,2023-03-22,Approved,Level2,רכישה גדולה לצרכי HR,96
+APP009,INV500009,יוסי שמואל,2023-03-27,Approved,Level2,ציוד למחלקת פיתוח,120
+APP010,INV500010,דנה גרין,2023-03-17,Approved,Level1,כמות גדולה - מחיר טוב,18
+APP011,INV500011,אבי כהן,2023-04-02,Approved,Level1,ציוד רשת חיוני,60
+APP012,INV500012,רחל לוי,2023-04-07,Approved,Level1,מדפסות למשרד,24
+APP013,INV500013,יוסי שמואל,2023-04-12,Approved,Level1,כבלים לפרויקט,36
+APP014,INV500014,דנה גרין,2023-04-17,Approved,Level1,מדפסת צבע למשרד,12
+APP015,INV500015,אבי כהן,2023-04-25,Pending,Level1,בבדיקת התאמה,NULL
+APP016,INV500016,רחל לוי,2023-05-05,Approved,Level2,כיסאות למשרד החדש,168
+APP017,INV500017,יוסי שמואל,2023-04-27,Approved,Level1,השלמת מלאי כבלים,48
+APP018,INV500018,דנה גרין,2023-05-12,Approved,Level2,מזגן לחדר שרתים,240
+APP019,INV500019,אבי כהן,2023-05-12,Approved,Level1,שדרוג זכרון,24
+APP020,INV500020,רחל לוי,2023-05-17,Approved,Level1,ציוד משרדי סטנדרטי,36
+APP021,INV500021,יוסי שמואל,2023-05-27,Approved,Level1,ארונות אחסון,72
+APP022,INV500022,דנה גרין,2023-06-05,Approved,Level1,טאבלטים לצוות השטח,84
+APP023,INV500023,אבי כהן,2023-06-07,Approved,Level1,עכברים נוספים,24
+APP024,INV500024,רחל לוי,2023-06-10,Approved,Level1,דיסקים לגיבוי,48
+APP025,INV500025,יוסי שמואל,2023-06-20,Pending,Level1,בהמתנה לאישור סופי,NULL
+APP026,INV500026,דנה גרין,2023-06-22,Approved,Level1,תאורה חכמה,36
+APP027,INV500027,אבי כהן,2023-06-27,Approved,Level1,מצלמות לפגישות,48
+APP028,INV500028,רחל לוי,2023-07-02,Approved,Level1,מסכים ניידים,24
+APP029,INV500029,יוסי שמואל,2023-07-10,Rejected,Level1,לא תואם למפרט ההזמנה,96
+APP030,INV500030,דנה גרין,2023-07-15,Pending,Level2,סכום גבוה - בבדיקה,NULL
+APP031,INV500031,אבי כהן,2023-07-20,Pending,Level1,בהמתנה לאישור תקציב,NULL
+APP032,INV500032,רחל לוי,2023-07-25,Pending,Level1,בבדיקת מפרט טכני,NULL
+APP033,INV500033,יוסי שמואל,2023-07-30,Pending,Level1,בבדיקת צרכי אבטחה,NULL
+APP034,INV500034,דנה גרין,2023-08-05,Pending,Level1,בהמתנה לאישור מנהל,NULL
+APP035,INV500035,אבי כהן,2023-08-10,Pending,Level1,בבדיקת התאמה למפרט,NULL
+APP036,INV500036,רחל לוי,2023-08-15,Pending,Level1,בהמתנה לאישור,NULL
+APP037,INV500037,יוסי שמואל,2023-08-20,Pending,Level1,בבדיקה,NULL
+APP038,INV500038,דנה גרין,2023-08-25,Pending,Level2,סכום גבוה - בבדיקה מעמיקה,NULL
+APP039,INV500039,אבי כהן,2023-08-30,Pending,Level3,רכישה מרכזית - מחכה לאישור סופי,NULL
+APP040,INV500040,רחל לוי,2023-09-05,Pending,Level1,בבדיקת התאמה,NULL
+APP041,INV500041,יוסי שמואל,2023-09-10,Pending,Level1,בהמתנה,NULL
+APP042,INV500042,דנה גרין,2023-09-15,Pending,Level1,בבדיקה,NULL
+APP043,INV500043,אבי כהן,2023-06-12,Rejected,Level1,כמות לא תואמת להזמנה,72
+APP044,INV500044,דנה גרין,2023-03-10,Approved,Level1,תיקון חשבונית - כמות מתוקנת,48
+APP045,INV500045,אבי כהן,2023-05-02,Approved,Level1,השלמת הזמנה,96

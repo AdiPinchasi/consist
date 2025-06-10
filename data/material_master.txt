@@ -1,0 +1,51 @@
+material_id,material_description,category,unit_of_measure,standard_price,is_active,created_date
+M100001,"מחשב נייד Dell Latitude 5520",IT Equipment,PC,3500.00,Y,2022-01-01
+M100002,"מקלדת אלחוטית Logitech MX Keys",IT Equipment,PC,450.00,Y,2022-01-01
+M100003,"עכבר אופטי Microsoft Ergonomic",IT Equipment,PC,180.00,Y,2022-01-01
+M100004,"מסך LCD Samsung 24 אינץ'",IT Equipment,PC,850.00,Y,2022-01-01
+M100005,"מדפסת לייזר HP LaserJet Pro",Office Equipment,PC,1200.00,Y,2022-01-01
+M100006,"כיסא משרדי ארגונומי מעור",Furniture,PC,950.00,Y,2022-01-01
+M100007,"שולחן עבודה מעץ אלון 120x80",Furniture,PC,1800.00,Y,2022-01-01
+M100008,"מזגן עילי LG 12000 BTU",HVAC,PC,2200.00,Y,2022-01-01
+M100009,"נורת LED Philips 15W חם",Lighting,PC,35.00,Y,2022-01-01
+M100010,"כבל רשת CAT6 מוגן 10 מטר",IT Equipment,PC,85.00,Y,2022-01-01
+M100011,"ספק כוח למחשב 650W Corsair",IT Equipment,PC,320.00,Y,2022-01-01
+M100012,"זכרון RAM Corsair 16GB DDR4",IT Equipment,PC,280.00,Y,2022-01-01
+M100013,"דיסק קשיח SSD Kingston 1TB",IT Equipment,PC,380.00,Y,2022-01-01
+M100014,"מצלמת אבטחה IP Hikvision 4MP",Security,PC,650.00,Y,2022-01-01
+M100015,"נתב אלחוטי ASUS Wi-Fi 6",IT Equipment,PC,420.00,Y,2022-01-01
+M100016,"מחשב נייד HP EliteBook",IT Equipment,PC,4200.00,Y,2022-01-01
+M100017,"מקלדת מכנית Razer",IT Equipment,PC,380.00,Y,2022-01-01
+M100018,"עכבר גיימינג Logitech G502",IT Equipment,PC,250.00,Y,2022-01-01
+M100019,"מסך 27 אינץ' LG UltraWide",IT Equipment,PC,1150.00,Y,2022-01-01
+M100020,"מדפסת משולבת Canon",Office Equipment,PC,890.00,N,2022-01-01
+M100021,"כיסא גיימינג DXRacer",Furniture,PC,1200.00,Y,2022-01-01
+M100022,"שולחן גיימינג שחור",Furniture,PC,650.00,Y,2022-01-01
+M100023,"מזגן Tadiran 18000 BTU",HVAC,PC,3200.00,Y,2022-01-01
+M100024,"נורת LED חכמה Xiaomi",Lighting,PC,95.00,Y,2022-01-01
+M100025,"כבל USB-C 2 מטר",IT Equipment,PC,45.00,Y,2022-01-01
+M100026,"ספק כוח 850W 80+ Gold",IT Equipment,PC,480.00,Y,2022-01-01
+M100027,"זכרון RAM 32GB DDR5",IT Equipment,PC,650.00,Y,2022-01-01
+M100028,"דיסק קשיח HDD 2TB WD",IT Equipment,PC,220.00,Y,2022-01-01
+M100029,"מצלמת רשת Logitech C920",IT Equipment,PC,320.00,Y,2022-01-01
+M100030,"מתג רשת 24 פורט",IT Equipment,PC,580.00,Y,2022-01-01
+M100031,"מחשב שולחני Dell OptiPlex",IT Equipment,PC,2800.00,Y,2022-01-01
+M100032,"מקלדת ועכבר אלחוטיים",IT Equipment,SET,220.00,Y,2022-01-01
+M100033,"אוזניות מקצועיות Sony",IT Equipment,PC,450.00,Y,2022-01-01
+M100034,"מסך נייד 15.6 אינץ'",IT Equipment,PC,780.00,Y,2022-01-01
+M100035,"מדפסת תוויות Brother",Office Equipment,PC,520.00,Y,2022-01-01
+M100036,"כיסא ישיבות מעוצב",Furniture,PC,420.00,Y,2022-01-01
+M100037,"ארון משרדי 3 מדפים",Furniture,PC,850.00,Y,2022-01-01
+M100038,"מאוורר תקרה חכם",HVAC,PC,380.00,Y,2022-01-01
+M100039,"תאורת LED רצועה 5 מטר",Lighting,ROLL,120.00,N,2022-01-01
+M100040,"כבל HDMI 4K 3 מטר",IT Equipment,PC,65.00,Y,2022-01-01
+M100041,"טאבלט Samsung Galaxy Tab",IT Equipment,PC,1200.00,Y,2022-01-01
+M100042,"מקלדת נומרית אלחוטית",IT Equipment,PC,85.00,Y,2022-01-01
+M100043,"עכבר ארגונומי ורטיקלי",IT Equipment,PC,180.00,Y,2022-01-01
+M100044,"מסך קעור 32 אינץ'",IT Equipment,PC,1650.00,Y,2022-01-01
+M100045,"מדפסת צבע Epson EcoTank",Office Equipment,PC,1450.00,Y,2022-01-01
+M100046,"כיסא מנהלים עור אמיתי",Furniture,PC,2200.00,Y,2022-01-01
+M100047,"שולחן ישיבות 8 מקומות",Furniture,PC,3500.00,Y,2022-01-01
+M100048,"מזגן מיני ספליט Electra",HVAC,PC,2800.00,Y,2022-01-01
+M100049,"פרוז'קטור Epson Full HD",IT Equipment,PC,2200.00,Y,2022-01-01
+M100050,"מערכת כריזה אלחוטית",IT Equipment,SET,850.00,Y,2022-01-01
