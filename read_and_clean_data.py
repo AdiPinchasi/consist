@@ -1,5 +1,28 @@
 import os
 import pandas as pd
+import matplotlib.pyplot as plt
+import re
+from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.metrics.pairwise import cosine_similarity
+import numpy as np
+from sklearn.cluster import KMeans
+from functools import reduce
+import pandas as pd
+from sklearn.model_selection import train_test_split, GridSearchCV
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.pipeline import Pipeline
+from sklearn.compose import ColumnTransformer
+from sklearn.preprocessing import StandardScaler, OneHotEncoder
+from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.metrics import classification_report
+from sklearn.metrics import confusion_matrix, ConfusionMatrixDisplay
+from itertools import combinations
+import re
+from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.metrics.pairwise import cosine_similarity
+import seaborn as sns
+from rapidfuzz import fuzz
+
 
 # Set your directory containing .txt files
 folder_path = r'C:\Adi\python_projects\consist\data'  # Use raw string for Windows paths
@@ -274,8 +297,7 @@ if 0:
             plt.show()
 
 
-import pandas as pd
-import os
+
 
 # Path to CSV
 base_path = r'C:\Adi\python_projects\consist\data\cleaned_files'
@@ -309,9 +331,6 @@ print(approval_summary_sorted[['approved', 'total', 'approval_rate']])
 
 
 #Identify trends in approvals by item types
-import pandas as pd
-import os
-import matplotlib.pyplot as plt
 
 # Define file path
 base_path = r'C:\Adi\python_projects\consist\data\cleaned_files'
@@ -350,8 +369,8 @@ plt.tight_layout()
 plt.show()
 
 #Examine the average times for invoice approval
-#import pandas as pd
-import os
+
+
 
 # Define the file path
 base_path = r'C:\Adi\python_projects\consist\data\cleaned_files'
@@ -389,7 +408,7 @@ df_clean['approval_month'] = df_clean['approval_date'].dt.to_period('M')
 monthly_avg = df_clean.groupby('approval_month')['processing_time_hours'].mean()
 
 # Plot monthly trend
-import matplotlib.pyplot as plt
+
 
 monthly_avg.plot(kind='line', marker='o', figsize=(10,5), title='Average Invoice Approval Time Over Time')
 plt.ylabel('Avg Processing Time (Hours)')
@@ -402,9 +421,7 @@ plt.show()
 
 #Identify differences between different departments or purchasing coordinators
 
-import pandas as pd
-import os
-import matplotlib.pyplot as plt
+
 
 # Define file path
 base_path = r'C:\Adi\python_projects\consist\data\cleaned_files'
@@ -462,7 +479,7 @@ df = pd.read_csv(file_path)
 
 
 #clean it again
-import re
+
 
 def clean_text(text):
     text = str(text).lower()
@@ -474,25 +491,25 @@ df["description_cleaned"] = df["vendor_material_description"].apply(clean_text)
 
 #vectorize description
 
-from sklearn.feature_extraction.text import TfidfVectorizer
+
 
 vectorizer = TfidfVectorizer()
 tfidf_matrix = vectorizer.fit_transform(df["description_cleaned"])
 
 #Create Textual Similarity Features
 #Pairwise Cosine Similarity
-from sklearn.metrics.pairwise import cosine_similarity
+
 
 similarity_matrix = cosine_similarity(tfidf_matrix)
 #This gives a matrix where similarity_matrix[i, j] is the similarity between row i and row j
 
 #Create a new feature — average similarity of each description to others:
-import numpy as np
+
 
 df["avg_desc_similarity"] = similarity_matrix.mean(axis=1)
 
 #clustering Similar Descriptions
-from sklearn.cluster import KMeans
+
 
 n_clusters = 10
 kmeans = KMeans(n_clusters=n_clusters, random_state=0)
@@ -572,7 +589,7 @@ supplier_items = df.groupby('vendor_id').agg(
 ).reset_index()
 
 #final merge
-from functools import reduce
+
 
 dfs = [supplier_stats, supplier_time, supplier_payment, supplier_items]
 supplier_history = reduce(lambda left, right: pd.merge(left, right, on='vendor_id', how='outer'), dfs)
@@ -582,11 +599,7 @@ supplier_history = reduce(lambda left, right: pd.merge(left, right, on='vendor_i
 df['invoice_approved'] = df['payment_status'].apply(lambda x: 1 if x.lower() == 'paid' else 0)
 
 # proces data
-from sklearn.model_selection import train_test_split
-from sklearn.preprocessing import StandardScaler, OneHotEncoder
-from sklearn.compose import ColumnTransformer
-from sklearn.pipeline import Pipeline
-from sklearn.impute import SimpleImputer
+
 
 # Select features
 features = [
@@ -599,9 +612,7 @@ y = df['invoice_approved']
 
 #build pipe line
 
-from sklearn.feature_extraction.text import TfidfVectorizer
-from sklearn.ensemble import RandomForestClassifier
-from sklearn.metrics import classification_report
+
 
 # Preprocessing pipelines
 numeric_features = ['quantity', 'unit_price', 'total_amount', 'days_to_due', 'correspondence_index']
@@ -630,14 +641,7 @@ y_pred = pipeline.predict(X_test)
 print(classification_report(y_test, y_pred))
 
 
-import pandas as pd
-from sklearn.model_selection import train_test_split, GridSearchCV
-from sklearn.ensemble import RandomForestClassifier
-from sklearn.pipeline import Pipeline
-from sklearn.compose import ColumnTransformer
-from sklearn.preprocessing import StandardScaler, OneHotEncoder
-from sklearn.feature_extraction.text import TfidfVectorizer
-from sklearn.metrics import classification_report
+
 
 # explanation
 #So cross-validation is fully integrated inside GridSearchCV — Grid Search with Cross-Validation
@@ -728,8 +732,7 @@ print(report_df)
 
 
 # explain tconfusion maix and FP and FN
-from sklearn.metrics import confusion_matrix, ConfusionMatrixDisplay
-import matplotlib.pyplot as plt
+
 
 # Assuming y_test and y_pred are defined after model prediction
 cm = confusion_matrix(y_test, y_pred)
@@ -743,8 +746,7 @@ plt.title("Confusion Matrix")
 plt.show()
 
 
-from itertools import combinations
-import re
+
 
 def clean_text(text):
     text = str(text).lower()
@@ -754,7 +756,7 @@ def clean_text(text):
 df['desc_clean'] = df['vendor_material_description'].apply(clean_text)
 pairs = list(combinations(df['desc_clean'].unique(), 2))
 
-import re
+
 
 def clean_text(text):
     text = str(text).lower()
@@ -764,19 +766,17 @@ def clean_text(text):
 
 
 
-from sklearn.feature_extraction.text import TfidfVectorizer
-from sklearn.metrics.pairwise import cosine_similarity
+
 
 tfidf = TfidfVectorizer()
 tfidf_matrix = tfidf.fit_transform(df['desc_clean'])
 
 similarity = cosine_similarity(tfidf_matrix)
-from rapidfuzz import fuzz
+
 
 df['similarity_score'] = df['desc_clean'].apply(lambda x: fuzz.token_sort_ratio(x, "reference item"))
 
-import seaborn as sns
-import matplotlib.pyplot as plt
+
 
 # Optional: select first 20 items for readability
 n = 20
@@ -967,7 +967,7 @@ print("Best Parameters:", grid_search.best_params_)
 print("Best CV F1 Score:", grid_search.best_score_)
 
 # Evaluate best model on test split
-from sklearn.model_selection import train_test_split
+
 
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, stratify=y, random_state=42)
 best_model = grid_search.best_estimator_
