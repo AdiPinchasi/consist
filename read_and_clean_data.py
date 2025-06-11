@@ -25,7 +25,9 @@ from rapidfuzz import fuzz
 
 
 # Set your directory containing .txt files
-folder_path = r'C:\Adi\python_projects\consist\data'  # Use raw string for Windows paths
+current_directory = os.getcwd()
+folder_path = current_directory + os.sep +'data'
+# Use raw string for Windows paths
 output_folder = os.path.join(folder_path, 'cleaned_files')
 
 # Create output folder if it doesn't exist
@@ -69,7 +71,7 @@ for filename in os.listdir(folder_path):
 #data quality analysis and anomaly detection on goods_receipts_cleaned.csv
 
 # Load cleaned goods_receipts file
-file_path = r'C:\Adi\python_projects\consist\data\cleaned_files\goods_receipts_cleaned.csv'
+file_path = os.path.join(folder_path, 'cleaned_files','goods_receipts_cleaned.csv')
 gr = pd.read_csv(file_path, encoding='utf-8-sig')
 
 # 1. Basic info
@@ -115,7 +117,8 @@ print(gr_per_day.sort_values(ascending=False).head())
 
 #data quality analysis and anomaly detection on  purchase_orders_cleaned.csv
 # Load cleaned purchase_orders file
-file_path = r'C:\Adi\python_projects\consist\data\cleaned_files\purchase_orders_cleaned.csv'
+file_path = os.path.join(folder_path, 'cleaned_files','purchase_orders_cleaned.csv')
+
 po = pd.read_csv(file_path, encoding='utf-8-sig')
 
 # 1. Basic info
@@ -175,7 +178,8 @@ print(f"\n--- Unit Price Outliers (above 99th percentile = {q99_price:.2f}) --- 
 
 
 # Load vendor_invoices cleaned file
-file_path = r'C:\Adi\python_projects\consist\data\cleaned_files\vendor_invoices_cleaned.csv'
+file_path = os.path.join(folder_path, 'cleaned_files','vendor_invoices_cleaned.csv')
+
 vi = pd.read_csv(file_path, encoding='utf-8-sig')
 
 print("\n--- Vendor Invoices Data Summary ---")
@@ -232,7 +236,8 @@ if 0:
     plt.rcParams["figure.figsize"] = (12, 6)
 
     # Path setup
-    base_path = r'C:\Adi\python_projects\consist\data\cleaned_files'
+    base_path =os.path.join(folder_path,'cleaned_files')
+
     files = {
         'Goods Receipts': 'goods_receipts_cleaned.csv',
         'Purchase Orders': 'purchase_orders_cleaned.csv',
@@ -300,7 +305,8 @@ if 0:
 
 
 # Path to CSV
-base_path = r'C:\Adi\python_projects\consist\data\cleaned_files'
+base_path =os.path.join(folder_path,'cleaned_files')
+
 file_path = os.path.join(base_path, 'invoice_approvals_cleaned.csv')
 
 # Read CSV
@@ -333,7 +339,7 @@ print(approval_summary_sorted[['approved', 'total', 'approval_rate']])
 #Identify trends in approvals by item types
 
 # Define file path
-base_path = r'C:\Adi\python_projects\consist\data\cleaned_files'
+base_path =os.path.join(folder_path,'cleaned_files')
 file_name = 'vendor_invoices_cleaned.csv'
 file_path = os.path.join(base_path, file_name)
 
@@ -373,7 +379,7 @@ plt.show()
 
 
 # Define the file path
-base_path = r'C:\Adi\python_projects\consist\data\cleaned_files'
+base_path =os.path.join(folder_path,'cleaned_files')
 file_name = 'invoice_approvals_cleaned.csv'
 file_path = os.path.join(base_path, file_name)
 
@@ -424,7 +430,7 @@ plt.show()
 
 
 # Define file path
-base_path = r'C:\Adi\python_projects\consist\data\cleaned_files'
+base_path =os.path.join(folder_path,'cleaned_files')
 file_name = 'invoice_approvals_cleaned.csv'
 file_path = os.path.join(base_path, file_name)
 
@@ -470,7 +476,7 @@ plt.show()
 #
 
 # Define file path
-base_path = r'C:\Adi\python_projects\consist\data\cleaned_files'
+base_path =os.path.join(folder_path,'cleaned_files')
 file_name = 'vendor_invoices_cleaned.csv'
 file_path = os.path.join(base_path, file_name)
 
