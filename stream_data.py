@@ -3,9 +3,12 @@ import pandas as pd
 import numpy as np
 import os
 
-base_path = r'C:\Adi\python_projects\consist\data\cleaned_files'
+current_directory = os.getcwd()
+folder_path = current_directory + os.sep +'data'
+base_path =os.path.join(folder_path,'cleaned_files')
 file_name = 'kpi_analysis_output.csv'
 file_path = os.path.join(base_path, file_name)
+
 
 # Read the CSV
 df = pd.read_csv(file_path)

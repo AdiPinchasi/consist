@@ -225,7 +225,7 @@ print(f"\n--- Unit Price Outliers (above 99th percentile = {q99_price:.2f}) --- 
 
 
 #Vizuasation
-if 0:
+if 1:
     import pandas as pd
     import os
     import seaborn as sns
